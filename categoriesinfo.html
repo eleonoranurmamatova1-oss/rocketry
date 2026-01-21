@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rocket Categories – ROCKETRY</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- STAR BACKGROUND -->
+<canvas id="stars"></canvas>
+
+<header>
+  <div class="logo">ROCKETRY</div>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav id="sideMenu" class="side-menu">
+  <a href="index.html">Home</a>
+  <a href="index.html#about">About</a>
+  <a href="categoriesinfo.html">Categories</a>
+  <a href="championship.html">Championship</a>
+  <a href="tutorials.html">Tutorials</a>
+  <a href="safety.html">Safety rules</a>
+  <a href="register.html" class="participate">Participate</a>
+</nav>
+
+<main class="section">
+
+  <!-- PAGE TITLE -->
+  <section class="fade">
+    <h1>Rocket Categories</h1>
+    <p class="muted">
+      Choose your category based on experience, age and engineering level.
+    </p>
+  </section>
+
+  <!-- WATER ROCKET -->
+  <section id="water" class="category-info fade">
+    <div class="category-image">PHOTO</div>
+    <div class="category-text">
+      <h2>Water Rockets</h2>
+      <p>
+        Water rockets are powered by compressed air and water.
+        This category is ideal for beginners and younger participants.
+      </p>
+      <ul>
+        <li>No combustion</li>
+        <li>Safe and educational</li>
+        <li>Focus on aerodynamics</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- AMATEUR SOLID FUEL -->
+  <section id="amateur" class="category-info fade">
+    <div class="category-image">PHOTO</div>
+    <div class="category-text">
+      <h2>Amateur Solid Fuel</h2>
+      <p>
+        Amateur solid fuel rockets introduce real propulsion systems
+        while maintaining strict safety standards.
+      </p>
+      <ul>
+        <li>Basic propulsion physics</li>
+        <li>Structural calculations</li>
+        <li>Parachute or safe landing system</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SPORT SOLID FUEL -->
+  <section id="sport" class="category-info fade">
+    <div class="category-image">PHOTO</div>
+    <div class="category-text">
+      <h2>Sport Solid Fuel</h2>
+      <p>
+        The most advanced category for experienced teams.
+        Focused on precision, performance and engineering excellence.
+      </p>
+      <ul>
+        <li>High altitude flights</li>
+        <li>Advanced stability systems</li>
+        <li>Professional competition standards</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="champ-cta fade">
+    <h2>Ready to choose your category?</h2>
+    <a href="register.html" class="btn big">Participate</a>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

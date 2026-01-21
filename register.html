@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration – ROCKETRY</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- STAR BACKGROUND -->
+<canvas id="stars"></canvas>
+
+<header>
+  <div class="logo">ROCKETRY</div>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav id="sideMenu" class="side-menu">
+  <a href="index.html">Home</a>
+  <a href="championship.html">Championship</a>
+  <a href="categoriesinfo.html">Categories</a>
+  <a href="tutorials.html">Tutorials</a>
+  <a href="safety.html">Safety rules</a>
+</nav>
+
+<main class="reg-page">
+  <h1>Registration</h1>
+
+  <form class="reg-form" action="https://formspree.io/f/mdaaywww" method="POST">
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Phone number</label>
+    <input type="tel" name="phone" required>
+
+    <label>Participation type</label>
+    <select id="type" name="participation_type" onchange="toggleTeam()">
+      <option value="single">Single participant</option>
+      <option value="team">Team</option>
+    </select>
+
+    <!-- SINGLE -->
+    <div id="singleFields">
+      <label>Full name</label>
+      <input type="text" name="single_name">
+      <label>School</label>
+      <input type="text" name="single_school">
+      <label>Class</label>
+      <input type="text" name="single_class">
+    </div>
+
+    <!-- TEAM -->
+    <div id="teamFields" style="display:none;">
+      <label>Team name</label>
+      <input type="text" name="team_name">
+
+      <label>Number of participants</label>
+      <select id="count" onchange="generateMembers()">
+        <option value="">Select</option>
+        <option>2</option><option>3</option><option>4</option>
+        <option>5</option><option>6</option><option>7</option>
+        <option>8</option><option>9</option><option>10</option>
+      </select>
+
+      <div id="members"></div>
+    </div>
+
+    <label>Category</label>
+    <select name="category">
+      <option>Water rocket</option>
+      <option>Amateur solid fuel</option>
+      <option>Sport solid fuel</option>
+    </select>
+
+    <input type="hidden" name="members" id="membersData">
+
+    <button class="btn big" type="submit">Register</button>
+  </form>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ROCKETRY</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+
+<header>
+  <div class="logo">ROCKETRY</div>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav id="sideMenu" class="side-menu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="categoriesinfo.html">Categories</a>
+  <a href="championship.html">Championship</a>
+  <a href="tutorials.html">Tutorials</a>
+  <a href="safety.html">Safety rules</a>
+  <a href="register.html" class="participate">Participate</a>
+</nav>
+
+
+
+<main>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  
+  <div class="hero-content fade">
+    <h1>ROCKETRY</h1>
+    <p>Engineering · Science · Space</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section fade">
+  <div class="about-grid">
+    <div class="photo-box">PHOTO</div>
+    <div>
+      <h2>About Team</h2>
+      <p>
+        Rocketry is an educational engineering project focused on
+        aerospace science and safe rocket construction.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories" class="section fade">
+  <h2>Categories</h2>
+
+  <div class="category-grid">
+    <div class="category-card" onclick="location.href='category-info.html#water'">
+      Water rocket
+    </div>
+    <div class="category-card" onclick="location.href='category-info.html#amateur'">
+      Amateur solid fuel
+    </div>
+    <div class="category-card" onclick="location.href='category-info.html#sport'">
+      Sport solid fuel
+    </div>
+  </div>
+</section>
+
+<!-- START -->
+<section id="start" class="section fade">
+  <h2>Start building now!</h2>
+  <p>Join the championship and build your own rocket.</p>
+
+  <a href="register.html" class="btn big">Participate</a>
+</section>
+
+</main>
+
+
+<script src="script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tutorials – ROCKETRY</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- STAR BACKGROUND -->
+<canvas id="stars"></canvas>
+
+<header>
+  <div class="logo">ROCKETRY</div>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav id="sideMenu" class="side-menu">
+  <a href="index.html">Home</a>
+  <a href="championship.html">Championship</a>
+  <a href="categoriesinfo.html">Categories</a>
+  <a href="tutorials.html">Tutorials</a>
+  <a href="safety.html">Safety rules</a>
+  <a href="register.html" class="participate">Participate</a>
+</nav>
+
+<main class="tutorial-layout">
+
+  <!-- LEFT WIKI MENU -->
+  <aside class="tutorial-nav">
+    <h3>Water Rockets</h3>
+    <a href="#water-intro">Introduction</a>
+    <a href="#water-materials">Materials</a>
+    <a href="#water-build">How to build</a>
+    <a href="#water-launch">Launch</a>
+
+    <h3>Solid Fuel</h3>
+    <a href="#solid-intro">Introduction</a>
+    <a href="#solid-safety">Safety</a>
+    <a href="#solid-build">Construction</a>
+    <a href="#solid-flight">Flight</a>
+  </aside>
+
+  <!-- CONTENT -->
+  <section class="tutorial-content">
+
+    <!-- WATER -->
+    <article id="water-intro" class="fade">
+      <h2>Water Rockets – Introduction</h2>
+      <div class="tutorial-block">
+        <div class="tutorial-img">PHOTO</div>
+        <p>
+          Water rockets are powered by compressed air and water.
+          They are safe and ideal for learning aerodynamics.
+        </p>
+      </div>
+    </article>
+
+    <article id="water-materials" class="fade">
+      <h2>Materials</h2>
+      <p>Plastic bottles, fins, nose cone, launcher.</p>
+    </article>
+
+    <article id="water-build" class="fade">
+      <h2>How to Build</h2>
+      <p>Cut fins, attach symmetrically, seal all joints.</p>
+    </article>
+
+    <article id="water-launch" class="fade">
+      <h2>Launch</h2>
+      <p>Pressurize gradually and keep safe distance.</p>
+    </article>
+
+    <!-- SOLID -->
+    <article id="solid-intro" class="fade">
+      <h2>Solid Fuel Rockets – Introduction</h2>
+      <div class="tutorial-block">
+        <div class="tutorial-img">PHOTO</div>
+        <p>
+          Solid fuel rockets use certified engines and
+          require strict safety rules.
+        </p>
+      </div>
+    </article>
+
+    <article id="solid-safety" class="fade">
+      <h2>Safety</h2>
+      <p>Never modify engines. Always use protection.</p>
+    </article>
+
+    <article id="solid-build" class="fade">
+      <h2>Construction</h2>
+      <p>Focus on weight balance and stability.</p>
+    </article>
+
+    <article id="solid-flight" class="fade">
+      <h2>Flight</h2>
+      <p>Use parachute systems for safe landing.</p>
+    </article>
+
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
