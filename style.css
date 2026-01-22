@@ -179,6 +179,53 @@ section {
   box-shadow: 0 0 20px rgba(198,40,40,0.5);
 }
 
+
+.footer {
+  background: #0b0b0b;
+  padding: 48px 20px;
+  text-align: center;
+}
+
+.footer-content h3 {
+  margin-bottom: 18px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+}
+
+.socials a {
+  width: 28px;
+  height: 28px;
+  color: #ffffff;
+  opacity: 0.75;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.socials a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+}
+
+.footer-text {
+  margin-top: 22px;
+  font-size: 13px;
+  opacity: 0.5;
+  letter-spacing: 0.5px;
+}
+
 /*               START           */
 #start {
   justify-content: center;
@@ -697,3 +744,4 @@ main.fade h1 {
     font-size: 32px;
   }
 }
+
